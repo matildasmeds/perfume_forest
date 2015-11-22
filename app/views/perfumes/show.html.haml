@@ -1,0 +1,13 @@
+%h1= "#{@perfume.title}, #{@perfume.year}"
+.perfume-container
+  .perfume
+    .layers
+      - @perfume.layer_types.each do |layer_type|
+        - name = layer_type.name
+        .layer{id: name}
+          %h4= name.capitalize
+          .notes
+          - @perfume.send("#{name}_notes_names").each do |note|
+            %span.note= note
+
+  = link_to 'Perfumes', perfumes_path
