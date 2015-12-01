@@ -1,0 +1,46 @@
+- identifiers:
+  - name: 'Envy Me'
+  - brand_id_by_name: 'Gucci'
+  - year: 2004
+  perfume_notes:
+  - top:
+    - 'Peony'
+    - 'Pineapple'
+    - 'Pink Pepper'
+    - 'Cassia'
+    - 'Peach'
+    - 'Jasmine'
+    - 'Mango'
+  - middle:
+    - 'Peony'
+    - 'Musk'
+    - 'White Tea'
+    - 'Pomegranate'
+    - 'Litchi'
+    - 'Jasmine'
+    - 'Rose'
+  - base:
+    - 'Teak Wood'
+    - 'Sandalwood'
+    - 'Tonka Bean'
+    - 'Musk'
+    - 'Tobacco'
+- identifiers:
+  - name: 'White Woods'
+  - brand_id_by_name: 'Clean'
+  - year: 2013
+  perfume_notes:
+  - top:
+    - 'Bergamot'
+    - 'Mandarin Orange'
+    - 'Black Pepper'
+  - middle:
+    - 'Magnolia'
+    - 'Lily'
+    - 'Vanilla Orchid'
+  - base:
+    - 'Sandalwood'
+    - 'Praline'
+    - 'Musk'
+    - 'Amber'
+    - 'Woody Notes'
