@@ -5,6 +5,13 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+# gems for tests
+# NOTE THESE SHOULD BE PROBABLY ONLY FOR DEV AND TEST GROUPS
+gem 'rspec'
+gem 'rspec-expectations'
+gem 'database_cleaner'
+gem 'shoulda-matchers'
+gem 'factory_girl_rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

@@ -5,12 +5,12 @@ class LayerType < ActiveRecord::Base
   validate :name_allowed?
 
   def self.allowed_names
-    ['top', 'middle', 'base', 'all']
+    %w(top middle base all)
   end
 
   def name_allowed?
-    if self.class.allowed_names.include? self.name 
-      true 
+    if self.class.allowed_names.include? name
+      true
     else
       errors.add(:name, 'is not allowed')
       false
