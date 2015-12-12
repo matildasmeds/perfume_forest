@@ -19,20 +19,36 @@ class Perfume < ActiveRecord::Base
   # where <layer> corresponds to any LayerType#name value in DB
   #       <attrs> corresponds to any attribute of Note, pluralized
   def method_missing(name)
-    parts = name.to_s.split('_')
-    super unless parts.include? 'notes'
-    return [] unless self.layer_types.collect(&:name).include? layer_name = parts.first
-    perf_notes = perfume_notes.includes(:note).where('layer_type_id = ?', LayerType.find_by_name(layer_name).id)
-    return [] if perf_notes.empty?
-    notes = perf_notes.collect(&:note)
-    if notes.last.respond_to? attrb = parts.last.chop.to_sym
-      notes.collect(&attrb)
-    else
-      notes
-    end
+    segments = name.to_s.split('_')
+    layer = segments.first
+    super unless segments.include?('notes') && has_layer?(layer)
+    notes = fetch_notes_by layer
+    return notes if segments.last == 'notes'
+    attrb = segments.last.chop.to_sym
+    return notes.collect(&attrb) if notes.last.respond_to? attrb
+    super
   end
 
   def all_notes
     notes.uniq
+  end
+
+  def all_notes_ids
+    all_notes.collect &:id
+  end
+
+  def all_notes_names
+    all_notes.collect &:name
+  end
+
+  private
+  def fetch_notes_by(layer_name)
+    conds = "layer_type_id = #{LayerType.find_by_name(layer_name).id}"
+    pn = perfume_notes.includes(:note).where conds
+    pn.collect(&:note)
+  end
+
+  def has_layer?(layer_name)
+    self.layer_types.collect(&:name).include? layer_name
   end
 end
