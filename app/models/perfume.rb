@@ -8,10 +8,10 @@ class Perfume < ActiveRecord::Base
 
   # for views
   def title
-    if self.name.include? self.brand.name
-      self.name
+    if name.include? brand.name
+      name
     else
-      "'#{self.name}' by #{self.brand.name}"
+      "'#{name}' by #{brand.name}"
     end
   end
 
@@ -27,13 +27,12 @@ class Perfume < ActiveRecord::Base
     notes = perf_notes.collect(&:note)
     if notes.last.respond_to? attrb = parts.last.chop.to_sym
       notes.collect(&attrb)
-    else 
+    else
       notes
     end
   end
 
   def all_notes
-    self.notes.uniq
+    notes.uniq
   end
-
 end

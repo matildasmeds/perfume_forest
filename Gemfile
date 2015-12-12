@@ -11,7 +11,6 @@ gem 'rspec'
 gem 'rspec-expectations'
 gem 'database_cleaner'
 gem 'shoulda-matchers'
-gem 'factory_girl_rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -46,6 +45,7 @@ gem 'haml-rails'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+#  gem 'factory_girl_rails'
 end
 
 group :development do
