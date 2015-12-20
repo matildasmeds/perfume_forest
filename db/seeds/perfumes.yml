@@ -44,3 +44,191 @@
     - 'Musk'
     - 'Amber'
     - 'Woody Notes'
+- identifiers:
+  - name: 'Le Parfum'
+  - brand_id_by_name: 'Carven'
+  - year: 2013
+  perfume_notes:
+  - top:
+    - 'Mandarin Blossom'
+    - 'Apricot'
+    - 'White Hyacinth'
+  - middle:
+    - 'Sweet Pea'
+    - 'Jasmine'
+    - 'Ylang-Ylang'
+  - base:
+    - 'Sandalwood'
+    - 'Osmanthus'
+    - 'Indonesian Patchouli'
+- identifiers:
+  - name: 'Variations'
+  - brand_id_by_name: 'Carven'
+  - year: 2000
+  perfume_notes:
+  - all:
+    - 'Carnation'
+    - 'Lilac'
+    - 'Raspberry Tea'
+    - 'Labdanum'
+    - 'Hyacinth'
+    - 'Vetiver'
+    - 'Sandalwood'
+    - 'Amber'
+    - 'Musk'
+- identifiers:
+  - name: 'L''Absolu'
+  - brand_id_by_name: 'Carven'
+  - year: 2015
+  perfume_notes:
+  - top:
+    - 'Mandarin'
+    - 'Ylang-Ylang'
+  - middle:
+    - 'Jasmine'
+    - 'Tuberose'
+    - 'Iris'
+  - base:
+    - 'Indonesian Patchouli'
+    - 'Sandalwood'
+    - 'Labdanum'
+- identifiers:
+  - name: 'Gracious Tuberose'
+  - brand_id_by_name: 'Gucci'
+  - year: 2012
+  perfume_notes:
+  - top:
+    - 'Peach'
+    - 'Violet Leaf'
+  - middle:
+    - 'African Orange Flower'
+    - 'Tuberose'
+    - 'Rose'
+  - base:
+    - 'French Labdanum'
+    - 'Virginia Cedar'
+- identifiers:
+  - name: 'Miss Dior'
+  - brand_id_by_name: 'Christian Dior'
+  - year: 2012
+  perfume_notes:
+  - top:
+    - 'Italian Mandarin'
+  - middle:
+    - 'Egyptian Jasmine'
+    - 'Rose'
+  - base:
+    - 'Patchouli'
+    - 'Musk'
+- identifiers:
+  - name: 'Miss Dior Eau de Toilette'
+  - brand_id_by_name: 'Christian Dior'
+  - year: 2013
+  perfume_notes:
+  - top:
+    - 'Tunisian Neroli Oil'
+  - middle:
+    - 'Bulgarian Rose'
+    - 'Turkish Rose'
+  - base:
+    - 'Indonesian Patchouli'
+- identifiers:
+  - name: 'Miss Dior Blooming Bouquet'
+  - brand_id_by_name: 'Christian Dior'
+  - year: 2014
+  perfume_notes:
+  - top:
+    - 'Sicilian Mandarin'
+  - middle:
+    - 'Pink Peony'
+    - 'Damask Rose'
+    - 'Apricot'
+    - 'Peach'
+  - base:
+    - 'White Musk'
+- identifiers:
+  - name: 'Gucchi Guilty'
+  - brand_id_by_name: 'Gucci'
+  - year: 2010
+  perfume_notes:
+  - top:
+    - 'Mandarin'
+    - 'Pink Pepper'
+  - middle:
+    - 'Peach'
+    - 'Lilac'
+    - 'Geranium'
+  - base:
+    - 'Patchouli'
+    - 'Amber'
+- identifiers:
+  - name: 'Gucchi Guilty Black Pour Gemme'
+  - brand_id_by_name: 'Gucci'
+  - year: 2010
+  perfume_notes:
+  - top:
+    - 'Red Fruits'
+    - 'Pink Pepper'
+  - middle:
+    - 'Raspberry'
+    - 'Peach'
+    - 'Lilac'
+    - 'Violet'
+  - base:
+    - 'Patchouli'
+    - 'Amber'
+- identifiers:
+  - name: 'The One Desire'
+  - brand_id_by_name: 'Dolce & Gabbana'
+  - year: 2013
+  perfume_notes:
+  - top:
+    - 'Bergamot'
+    - 'Mandarin'
+    - 'Litchi'
+    - 'Lily of the Valley'
+  - middle:
+    - 'Tuberose'
+  - base:
+    - 'Caramel'
+    - 'Vanilla'
+    - 'Sandalwood'
+    - 'Musk'
+- identifiers:
+  - name: 'The One'
+  - brand_id_by_name: 'Dolce & Gabbana'
+  - year: 2006
+  perfume_notes:
+  - top:
+    - 'Bergamot'
+    - 'Mandarin'
+    - 'Litchi'
+    - 'Peach'
+  - middle:
+    - 'Jasmine'
+    - 'Lily of the Valley'
+    - 'White Lily'
+    - 'Plum'
+  - base:
+    - 'Vetiver'
+    - 'Vanilla'
+    - 'Amber'
+    - 'Musk'
+- identifiers:
+  - name: 'The One Rose'
+  - brand_id_by_name: 'Dolce & Gabbana'
+  - year: 2009
+  perfume_notes:
+  - top:
+    - 'Pink Grapefruit'
+    - 'Mandarin'
+    - 'Cassis'
+  - middle:
+    - 'Peony'
+    - 'Lily'
+    - 'Litchi'
+    - 'Bulgarian Rose'
+  - base:
+    - 'Vanilla'
+    - 'Amber'
+    - 'Musk'
