@@ -4,7 +4,7 @@ class Perfume < ActiveRecord::Base
   has_many :notes, through: :perfume_notes
   has_many :layer_types, -> { distinct }, through: :perfume_notes
   validates_presence_of :name, :brand, :year
-  validates_uniqueness_of :name
+  validates :name, uniqueness: { scope: :brand_id, case_sensitive: false }
 
   # for views
   def title
