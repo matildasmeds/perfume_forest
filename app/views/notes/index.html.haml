@@ -1,4 +1,12 @@
-%h1= "Notes Index"
-
-- @notes.each do |note|
-  %note= "#{note.name}"
+%h1= "Perfumes by Notes"
+.container
+  .notes
+  - @notes.each do |note|
+    .note{id: note.id}
+      .name= link_to note.name, note_path(note.id)
+      .perfumes
+        .div= 'Present in Perfumes: '
+      - note.perfumes.each do |perfume|
+        .name= link_to perfume.name, perfume_path(perfume.id)
+  = link_to 'All Perfumes', perfumes_path
+  = link_to 'All Notes', notes_path

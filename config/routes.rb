@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root 'perfumes#index'
   resources :perfumes, only: [:index, :show]
-#  resources :notes, only: [:index]
+  resources :notes, only: [:index, :show]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

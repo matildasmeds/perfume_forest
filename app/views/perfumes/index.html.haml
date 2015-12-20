@@ -1,6 +1,6 @@
 %h1= 'Perfumes index'
 
-.perfume-container
+.container
   - @perfumes.each do |perfume|
     .perfume{id: perfume.id}
       .brand= perfume.brand.name

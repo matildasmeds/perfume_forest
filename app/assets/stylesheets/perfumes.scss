@@ -2,12 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.perfume-container {
-  width: 70%;
-  margin: auto;
-}
-
-.perfume {
+.perfume, .note {
   border-style: solid;
   border-color: #FFE1FF;
   background: rgba(255,255,255,0.8);

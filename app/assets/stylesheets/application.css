@@ -39,3 +39,8 @@ body {
 a {
   color: #292421;
 }
+
+.container {
+  width: 70%;
+  margin: auto;
+}

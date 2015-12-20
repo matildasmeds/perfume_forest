@@ -1,0 +1,9 @@
+%h1= "Perfumes with #{@note.name} notes"
+.container
+  .note
+    .perfumes
+    - @note.perfumes.each do |perfume|
+      .name= link_to perfume.name, perfume_path(perfume.id)
+
+  = link_to 'All Perfumes', perfumes_path
+  = link_to 'All Notes', notes_path
