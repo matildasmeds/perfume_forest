@@ -4,12 +4,12 @@ class LayerType < ActiveRecord::Base
   validates :name, presence: true, uniqueness: true
   validate :name_allowed?
 
-  def self.allowed_names
+  def self.NAMES
     %w(top middle base all)
   end
 
   def name_allowed?
-    if self.class.allowed_names.include? name
+    if LayerType.NAMES.include? name
       true
     else
       errors.add(:name, 'is not allowed')

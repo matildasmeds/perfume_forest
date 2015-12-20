@@ -9,12 +9,11 @@ RSpec.configure do |config|
 
   # Seeding and DatabaseCleaner is fast enough for now
   config.before(:suite) do
-    puts '......................................................'
-    puts '... Running PerfumeForest test suite               ...'
-    puts '... Seed DB before suite                           ...'
-    puts '... Test data creation choices pend on performance ...'
-    puts '... DB clean up strategy transaction               ...'
-    puts '......................................................'
+    puts "\n----------------------------------------------------"
+    puts '| Before suite: Seed DB                            |'
+    puts '| DB clean up strategy transaction                 |'
+    puts '| Running PerfumeForest test suite                 |'
+    puts '----------------------------------------------------'
     DatabaseCleaner.strategy = :transaction
     DatabaseCleaner.start
     Rails.application.load_seed
@@ -22,9 +21,9 @@ RSpec.configure do |config|
 
   config.after(:suite) do
     DatabaseCleaner.clean
-    puts '......................................................'
-    puts '... Clean up DB after suite                        ...'
-    puts '......................................................'
+    puts "\n----------------------------------------------------"
+    puts '| After suite: Clean up DB                         |'
+    puts '----------------------------------------------------'
   end
 
   config.expect_with :rspec do |c|
