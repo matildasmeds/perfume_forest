@@ -33,6 +33,7 @@ gem 'haml-rails'
 
 group :development, :test do
   gem 'rspec'
+  gem 'rspec-rails'
   gem 'rspec-expectations'
   gem 'database_cleaner'
   gem 'shoulda-matchers'
