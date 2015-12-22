@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'models/shared_examples/note_collection'
+require_relative 'shared_examples/note_collection'
 
 RSpec.describe Perfume, type: :model do
   before(:all) do
