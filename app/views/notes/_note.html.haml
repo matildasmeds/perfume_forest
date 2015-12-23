@@ -1,0 +1,5 @@
+.note
+  .name= link_to note.name, note_path(note.id)
+  .perfumes= 'Present in Perfumes: '
+  - note.perfumes.each do |perfume|
+    .perfume= link_to perfume.title, perfume_path(perfume.id)

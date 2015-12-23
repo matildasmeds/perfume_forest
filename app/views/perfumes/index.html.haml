@@ -1,11 +1,4 @@
 %h1= 'Perfumes index'
-
 .container
-  - @perfumes.each do |perfume|
-    .perfume{id: perfume.id}
-      .brand= perfume.brand.name
-      - if perfume.notes.empty?
-        .name= perfume.name
-      - else
-        .name= link_to perfume.name, perfume_path(perfume.id)
-      .year= perfume.year
+  .perfumes
+  = render @perfumes
