@@ -1,3 +1,4 @@
-.perfume
-  .name= link_to perfume.title, perfume_path(perfume.id)
-  .year= perfume.year
+.perfume[perfume]
+  .perfume__name= link_to perfume.title, perfume_path(perfume.id)
+  .perfume__year= perfume.year
+  .perfume__loveit!= '&#9825;'

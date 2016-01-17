@@ -4,17 +4,36 @@
 
 .perfume, .note {
   border-style: solid;
-  border-color: #FFE1FF;
-  background: rgba(255,255,255,0.8);
+  border-color: honeydew;
+//  background: rgba(255,255,255,0.8);
+  background: ghostwhite;
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 10px;
-  border-width: 1px;
+  border-width: 5px;
 }
 
-.perfume .brand, .name, .year {
+.perfume__name, .perfume__year, .perfume__loveit {
   display: inline;
   padding: 10px;
+}
+
+.perfume__loveit {
+  font-weight: bolder;
+}
+
+.perfume__loveit.hover {
+    text-shadow: 0px 0px 1px deeppink;
+}
+
+.perfume__loveit.loved {
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.perfume__loveit.hover, .perfume__loveit.loved {
+  color: #FF3E96;
+  cursor: pointer;
+  cursor: hand;
 }
 
 .layer {

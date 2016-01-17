@@ -33,6 +33,7 @@ h4 {
 
 body {
   background-image: url('body/orchid-bg.jpg');
+  background-repeat: repeat-y;
   background-color: #FFF;
 }
 
