@@ -38,7 +38,8 @@ body {
 }
 
 a {
-  color: #292421;
+  color: darkmagenta;
+  text-decoration: none;
 }
 
 .container {
