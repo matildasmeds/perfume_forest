@@ -1,11 +1,12 @@
 %h1= "#{@perfume.title}, #{@perfume.year}"
 .container
-  .perfume
+  .perfume[@perfume]
+    .perfume__loveit!= '&#9825;'
     .layers
       - @perfume.layer_types.each do |layer_type|
         - name = layer_type.name
         .layer{id: name}
-          %h4= name.capitalize
+          %h4= "#{name.capitalize} notes"
           .notes
           - @perfume.send("#{name}_notes").each do |note|
             %span.note= link_to note.name, note_path(note.id)

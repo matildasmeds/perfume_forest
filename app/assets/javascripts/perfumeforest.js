@@ -1,5 +1,6 @@
 /*jslint browser: true*/
 /*jslint node: true */
+/*global $ */
 'use strict';
 var PERFUMEFOREST = {};
 // all className toggling managed here
@@ -79,7 +80,7 @@ PERFUMEFOREST.events = {
         elt.addEventListener('mousedown', this.mousedown);
     }
 };
-window.onload = function () {
+$(document).on('page:change', function () {
     // add handlers to the hearts
     // ideally this method added only to those views where it matters!!!
     var perfumes = document.getElementsByClassName('perfume'),
@@ -98,4 +99,4 @@ window.onload = function () {
             }
         }
     }
-};
+});
