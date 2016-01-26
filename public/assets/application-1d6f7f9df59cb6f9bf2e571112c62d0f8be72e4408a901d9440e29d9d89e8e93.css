@@ -1,0 +1,114 @@
+/* line 5, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/perfumes.scss */
+.perfume, .note {
+  border-style: solid;
+  border-color: #FFE1FF;
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border-width: 5px;
+}
+
+/* line 15, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/perfumes.scss */
+.perfume__name, .perfume__year, .perfume__loveit {
+  display: inline;
+  padding: 10px;
+}
+
+/* line 20, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/perfumes.scss */
+.perfume__loveit {
+  font-weight: bolder;
+}
+
+/* line 24, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/perfumes.scss */
+.perfume__loveit.hover {
+  text-shadow: 0px 0px 1px deeppink;
+}
+
+/* line 28, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/perfumes.scss */
+.perfume__loveit.loved {
+  text-shadow: 1px 1px 2px #000000;
+}
+
+/* line 32, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/perfumes.scss */
+.perfume__loveit.hover, .perfume__loveit.loved {
+  color: #FF3E96;
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 38, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/perfumes.scss */
+.layer {
+  margin-top: 20px;
+}
+
+/* line 42, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/perfumes.scss */
+.notes {
+  margin-bottom: 20px;
+}
+
+/* line 46, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/perfumes.scss */
+span.note {
+  background: ivory;
+  padding: 10px;
+  margin: 5px;
+  border-style: solid;
+  border-color: thistle;
+  border-radius: 5px;
+  border-width: 3px;
+  position: relative;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+body {
+  font-family: 'Verdana';
+  background-color: ghostwhite;
+}
+
+h1 {
+  position: relative;
+  left: 15%;
+  top: 30px;
+  font-family: 'Tangerine', serif;
+  font-size: 72px;
+}
+
+h4 {
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+
+
+a {
+  color: mediumvioletred;
+  text-decoration: none;
+}
+
+a:visited, a:link {
+  color: mediumvioletred;
+}
+
+a:hover {
+  color: deeppink;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
