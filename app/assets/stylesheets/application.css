@@ -15,7 +15,8 @@
  */
 
 body {
-font-family: 'Verdana';
+  font-family: 'Verdana';
+  background-color: ghostwhite;
 }
 
 h1 {
@@ -31,15 +32,19 @@ h4 {
   margin-top: 15px;
 }
 
-body {
-  background-image: url('body/orchid-bg.jpg');
-  background-repeat: repeat-y;
-  background-color: #FFF;
-}
+
 
 a {
-  color: darkmagenta;
+  color: mediumvioletred;
   text-decoration: none;
+}
+
+a:visited, a:link {
+  color: mediumvioletred;
+}
+
+a:hover {
+  color: deeppink;
 }
 
 .container {
