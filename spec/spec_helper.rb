@@ -19,6 +19,7 @@ RSpec.configure do |config|
     DatabaseCleaner.strategy = :transaction
     DatabaseCleaner.start
     Rails.application.load_seed
+    Perfume.define_dynamic_methods
   end
 
   config.after(:suite) do
@@ -29,8 +30,27 @@ RSpec.configure do |config|
   end
 
   config.include Rails.application.routes.url_helpers
+  config.run_all_when_everything_filtered = true
+
+  # Enable Capybara server retrieve seeded data
+  class ActiveRecord::Base
+    mattr_accessor :shared_connection
+    @@shared_connection = nil
+    def self.connection
+      @@shared_connection || retrieve_connection
+    end
+  end
+  ActiveRecord::Base.shared_connection = ActiveRecord::Base.connection
+
   config.include Capybara::DSL
 
+  # Configure Selenium for Capybara
+  Capybara.register_driver :selenium do |app|
+    Capybara::Selenium::Driver.new(app, :browser => :chrome)
+  end
+  Capybara.run_server = true
+
+  # Reinforce expect syntax
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end

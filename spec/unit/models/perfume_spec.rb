@@ -5,7 +5,7 @@ RSpec.describe Perfume, type: :model do
   before(:all) do
     @perfume = Perfume.last
     puts 'WARN: Sample perfume not found in DB' unless @perfume
-    puts 'WARN: Sample perfume must have notes' if @perfume.all_notes.empty?
+    puts 'WARN: Sample perfume must have notes' if @perfume.notes.empty?
   end
   describe 'validations' do
     it { should belong_to(:brand) }

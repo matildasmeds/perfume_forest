@@ -1,8 +1,7 @@
 require 'spec_helper'
-# Helpers could be later placed somewhere else
-# or appended with more actions, as needed.
-require_relative 'navigation_spec_helpers'
-
+require_relative '../navigation_spec_helpers'
+# Note: Capybara with selenium is not able
+# to navigate these. Reason unknown.
 describe 'Navigation' do
   describe 'Show paths' do
 

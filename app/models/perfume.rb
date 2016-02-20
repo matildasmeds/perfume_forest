@@ -16,12 +16,18 @@ class Perfume < ActiveRecord::Base
   end
 
   # Convenience attr_readers for layer-based note collections
-  LayerType.all.each do |layer_type|
-    lns = "#{layer_type.name}_notes"
-    define_method(lns) { notes_by(layer_type) }
-    define_method("#{lns}_ids") { notes_by(layer_type).collect(&:id) }
-    define_method("#{lns}_names") { notes_by(layer_type).collect(&:name) }
+  def self.define_dynamic_methods
+    LayerType.all.each do |layer_type|
+      next if layer_type.name == 'all'
+      lns = "#{layer_type.name}_notes"
+      define_method(lns) { notes_by(layer_type) }
+      define_method("#{lns}_ids") { notes_by(layer_type).collect(&:id) }
+      define_method("#{lns}_names") { notes_by(layer_type).collect(&:name) }
+    end
   end
+
+  # Had to encapsulate this to enable tests
+  Perfume.define_dynamic_methods
 
   def all_notes
     notes.uniq
