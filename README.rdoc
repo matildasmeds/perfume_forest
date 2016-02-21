@@ -21,5 +21,4 @@ Feedback is very welcome, and so are contributions, if you feel interested in th
 
 == Author
 
-Published under MIT Licence
-Copyright © 2016 Matilda Smeds
+Published under MIT Licence, Copyright © 2016 Matilda Smeds
