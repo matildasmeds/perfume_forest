@@ -2,7 +2,9 @@
 
 == Perfume ... what?
 
-PerfumeForest is a catalogue of perfumes and corresponding notes, built with Ruby on Rails. You can 'like' perfumes that you already know you like, and the app will *soon enough* recommend you other perfumes that could interest you from the catalogue. The name is derivation from so called random forest algorithms, which gave me the idea for this application originally. (And also the challenge of finding compelling perfumes.)
+PerfumeForest is an online catalogue of perfumes and corresponding notes. You can 'like' perfumes that you already know you like, and the app will *soon enough* recommend you other perfumes that could interest you from the catalogue. 
+
+The name is derived from so called random forest algorithms, which gave me the idea for this application originally. (And the challenge of finding compelling perfumes.)
 
 Technical stack includes Ruby on Rails 4.2, Thin webserver, Postgresql for production (deployed on Heroku), Haml for templating, vanilla CSS, and a bit of JavaScript to implement the client side 'like perfumes' functionality. Test suite is powered by RSpec, Capybara, Selenium and Chrome driver.
 
