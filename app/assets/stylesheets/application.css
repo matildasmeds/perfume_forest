@@ -14,7 +14,14 @@
  *= require_self
  */
 
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
 body {
+  height: 100%;
+  overflow: auto;
   font-family: 'Verdana';
   background-color: ghostwhite;
   margin: 0px;

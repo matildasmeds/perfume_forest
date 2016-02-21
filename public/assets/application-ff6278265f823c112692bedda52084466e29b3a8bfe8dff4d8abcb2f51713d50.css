@@ -1,0 +1,158 @@
+/* line 1, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/footer.scss */
+.footer {
+  font-family: Tangerine;
+  font-size: 32px;
+  background-color: mediumpurple;
+  height: 50px;
+  display: block;
+  bottom: 0px;
+  width: 100%;
+  position: fixed;
+}
+
+/* line 12, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/footer.scss */
+.footer__container {
+  clear: both;
+  height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 70%;
+  margin: auto;
+}
+
+/* line 21, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/footer.scss */
+.footer__left {
+  float: left;
+  display: inline;
+}
+
+/* line 26, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/footer.scss */
+.footer__right {
+  float: right;
+  display: inline;
+}
+/* line 1, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/liking_feature.scss */
+.perfume__loveit {
+  font-weight: bolder;
+  display: inline;
+  padding: 10px;
+}
+
+/* line 7, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/liking_feature.scss */
+.perfume__loveit.hover {
+  text-shadow: 0px 0px 1px deeppink;
+}
+
+/* line 11, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/liking_feature.scss */
+.perfume__loveit.loved {
+  text-shadow: 1px 1px 2px #000000;
+}
+
+/* line 15, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/liking_feature.scss */
+.perfume__loveit.hover, .perfume__loveit.loved {
+  color: #FF3E96;
+  cursor: pointer;
+  cursor: hand;
+}
+/* line 1, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/perfumes_and_notes.scss */
+.perfumes__perfume, .notes__note {
+  background-color: white;
+  border-color: #ffe1ff;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 5px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+/* line 10, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/perfumes_and_notes.scss */
+.perfume__name, .perfume__year, .perfume__brand {
+  display: inline;
+  padding: 10px;
+}
+
+/* line 14, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/perfumes_and_notes.scss */
+.perfume__layer {
+  margin-top: 20px;
+}
+
+/* line 17, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/perfumes_and_notes.scss */
+.perfume__layer__notes {
+  background: ivory none repeat scroll 0 0;
+  margin-bottom: 20px;
+}
+
+/* line 21, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/perfumes_and_notes.scss */
+.layer__notes__note, .note__perfumes__perfume {
+  background: ivory none repeat scroll 0 0;
+  border-color: mediumpurple;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 3px;
+  display: inline-block;
+  padding: 8px;
+  margin-bottom: 5px;
+}
+
+/* line 32, /Users/matilda/CodeProjects/perfume_forest/app/assets/stylesheets/perfumes_and_notes.scss */
+.layer__notes__note:hover, .note__perfumes__perfume:hover {
+  border-color: deeppink;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+  font-family: 'Verdana';
+  background-color: ghostwhite;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  position: relative;
+  top: 30px;
+  font-family: 'Tangerine', serif;
+  font-size: 72px;
+}
+
+h4 {
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+a {
+  color: indigo;
+  text-decoration: none;
+}
+
+a:hover {
+  color: deeppink;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto -50px;
+  min-height: 100%;
+  padding-bottom: 50px;
+}
