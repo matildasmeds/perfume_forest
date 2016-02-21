@@ -4,8 +4,6 @@ gem 'rails', '4.2.4'
 # Use PostgreSQL in production
 gem 'pg'
 gem 'thin'
-# use sqlite for test and dev
-gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -44,6 +42,7 @@ group :development, :test do
   gem 'chromedriver-helper'
   gem 'byebug'
   gem 'capybara'
+  gem 'sqlite3'
 end
 
 group :development do
