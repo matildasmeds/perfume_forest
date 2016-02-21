@@ -4,7 +4,7 @@
 
 PerfumeForest is an online catalogue of perfumes and corresponding notes. You can 'like' perfumes that you already know you like, and the app will *soon enough* recommend you other perfumes that could interest you from the catalogue. 
 
-Visit the application here --> https://perfume-forest.herokuapp.com/
+Visit the application --> https://perfume-forest.herokuapp.com
 
 The name is derived from so called random forest algorithms, which sparked the idea for this application initially.
 
