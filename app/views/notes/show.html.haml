@@ -1,9 +1,6 @@
 %h1= "Perfumes with #{@note.name} notes"
-.container
-  .note
-    .perfumes
-    - @note.perfumes.each do |perfume|
-      .name= link_to perfume.name, perfume_path(perfume.id)
+.perfumes__perfume
+  - @note.perfumes.each do |perfume|
+    - @perfume = perfume
+    = render 'perfume', object: @perfume
 
-  = link_to 'All Perfumes', perfumes_path
-  = link_to 'All Notes', notes_path

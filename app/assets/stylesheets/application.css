@@ -17,11 +17,12 @@
 body {
   font-family: 'Verdana';
   background-color: ghostwhite;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 {
   position: relative;
-  left: 15%;
   top: 30px;
   font-family: 'Tangerine', serif;
   font-size: 72px;
@@ -32,15 +33,9 @@ h4 {
   margin-top: 15px;
 }
 
-
-
 a {
-  color: mediumvioletred;
+  color: indigo;
   text-decoration: none;
-}
-
-a:visited, a:link {
-  color: mediumvioletred;
 }
 
 a:hover {
@@ -49,5 +44,7 @@ a:hover {
 
 .container {
   width: 70%;
-  margin: auto;
+  margin: 0 auto -50px;
+  min-height: 100%;
+  padding-bottom: 50px;
 }

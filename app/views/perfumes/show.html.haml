@@ -1,17 +1,12 @@
-%h1= "#{@perfume.title}, #{@perfume.year}"
-.container
-  .perfume[@perfume]
+%h1= "#{@perfume.name}  perfume"
+.perfumes
+  .perfumes__perfume[@perfume]
     .perfume__loveit!= '&#9825;'
+    .perfume_details
+      %p
+        = "Created by #{@perfume.brand.name}, "
+        = "in #{@perfume.year}"
     .layers
-      - @perfume.layer_types.each do |layer_type|
-        - name = layer_type.name
-        .layer{id: name}
-          %h4= "#{name.capitalize} notes"
-          .notes
-          - @perfume.send("#{name}_notes").each do |note|
-            %span.note= link_to note.name, note_path(note.id)
-
-  = link_to 'All Perfumes', perfumes_path
-  = link_to 'All Notes', notes_path
+      = render 'layer_types', object: @perfume
 
 = javascript_include_tag 'application', 'data-turbolinks-track' => true

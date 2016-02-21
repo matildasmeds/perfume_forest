@@ -1,0 +1,19 @@
+.perfume__loveit {
+  font-weight: bolder;
+  display: inline;
+  padding: 10px;
+}
+
+.perfume__loveit.hover {
+  text-shadow: 0px 0px 1px deeppink;
+}
+
+.perfume__loveit.loved {
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.perfume__loveit.hover, .perfume__loveit.loved {
+  color: #FF3E96;
+  cursor: pointer;
+  cursor: hand;
+}

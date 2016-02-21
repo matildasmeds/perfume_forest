@@ -7,4 +7,6 @@
     %link{:href => "https://fonts.googleapis.com/css?family=Tangerine", :rel => "stylesheet", :type => "text/css"}/
     = csrf_meta_tags
   %body
-    = yield
+    .container
+      = yield
+    = render 'footer'

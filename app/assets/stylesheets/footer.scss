@@ -1,0 +1,29 @@
+.footer {
+    font-family: Tangerine;
+    font-size: 32px;
+    background-color: mediumpurple;
+    height: 50px;
+    display: block;
+    bottom: 0px;
+    width: 100%;
+    position: fixed;
+}
+
+.footer__container {
+    clear: both;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 70%;
+    margin: auto;
+}
+
+.footer__left {
+    float: left;
+    display: inline;
+}
+
+.footer__right {
+    float: right;
+    display: inline;
+}

@@ -147,7 +147,7 @@
   - base:
     - 'White Musk'
 - identifiers:
-  - name: 'Gucchi Guilty'
+  - name: 'Gucci Guilty'
   - brand_id_by_name: 'Gucci'
   - year: 2010
   perfume_notes:
@@ -162,7 +162,7 @@
     - 'Patchouli'
     - 'Amber'
 - identifiers:
-  - name: 'Gucchi Guilty Black Pour Gemme'
+  - name: 'Gucci Guilty Black Pour Gemme'
   - brand_id_by_name: 'Gucci'
   - year: 2010
   perfume_notes:
