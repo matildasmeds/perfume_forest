@@ -24,6 +24,6 @@ def reset_local_storage
   visit root_path
   # For some reason, if I just wipe out localStorage, gone is the JS too
   # This works, however it also exposes implementation
-  script = "localStorage.setItem('PERFUMEFOREST:likedPerfumes', '[]')"
+  script = "localStorage.setItem('LIKING_FEATURE:likedPerfumes', '[]')"
   page.execute_script(script)
 end
