@@ -1,6 +1,6 @@
 %h1= "#{@note.name} ~ Note"
 .perfumes__perfume
-  %p= "Perfumes with #{@note.name}"
+  %p= "Perfumes with #{@note.name}:"
   - @note.perfumes.each do |perfume|
     - @perfume = perfume
     = render 'perfume', object: @perfume

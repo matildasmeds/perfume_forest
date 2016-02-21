@@ -9,7 +9,7 @@ class Perfume < ActiveRecord::Base
   # for views
   def title
     if name.include? brand.name
-      name
+      "'#{name}'"
     else
       "'#{name}' by #{brand.name}"
     end
