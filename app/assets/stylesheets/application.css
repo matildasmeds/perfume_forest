@@ -46,7 +46,7 @@ a {
 }
 
 a:hover {
-  color: deeppink;
+  text-shadow: 0px 0px 1px deeppink;
 }
 
 .container {

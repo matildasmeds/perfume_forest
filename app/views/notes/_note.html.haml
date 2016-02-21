@@ -1,6 +1,6 @@
 .notes__note
   %p
-    = link_to note.name, note_path(note.id)
+    = link_to "\'#{note.name}\'", note_path(note.id)
     = 'is present in the following perfumes:'
   - note.perfumes.each do |perfume|
     - @perfume = perfume
