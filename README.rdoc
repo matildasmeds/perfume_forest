@@ -1,32 +1,23 @@
-== README
+= README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+== What is it?
 
-Things you may want to cover:
+A catalogue of perfumes and corresponding notes, built with Ruby on Rails. You can 'like' perfumes that you already know you like, and the app will *soon enough* recommend you other perfumes that could interest you from the catalogue.
 
-* Ruby version
+Technical stack includes Ruby on Rails 4.2, Thin webserver, Postgresql for production (deployed on Heroku), Haml for templating, vanilla CSS, and a bit of JavaScript to implement the client side 'like perfumes' functionality. Test suite is powered by RSpec, Capybara, Selenium and Chrome driver.
 
-* System dependencies
+Feedback is very welcome, and so are contributions, if you feel interested in the project.
 
-* Configuration
+== Installation steps
+  git clone https://github.com/matildasmeds/perfume_forest.git
+  bundle install
+  rake db:schema:load
+  rake db:seed
 
-* Database creation
+== Start application
+  rails s
 
-In the application folder, run
-'rake db:schema:load'
-'rake db:seed'
+== Author
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Published under MIT Licence
+Copyright © 2016 Matilda Smeds
