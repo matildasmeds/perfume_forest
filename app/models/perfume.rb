@@ -33,6 +33,10 @@ class Perfume < ActiveRecord::Base
     notes.uniq
   end
 
+  def layer_names
+    layer_types.collect(&:name)
+  end
+
   def all_notes_ids
     all_notes.collect(&:id)
   end
