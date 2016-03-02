@@ -1,0 +1,6 @@
+- @perfume.layer_names.each do |name|
+  .perfume__layer{id: name}
+    %h4= "#{name.capitalize} notes"
+    .perfume__layer__notes
+    - @notes = @perfume.send("#{name}_notes")
+    = render 'notes', object: @notes

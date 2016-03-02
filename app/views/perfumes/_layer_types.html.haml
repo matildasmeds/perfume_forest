@@ -1,8 +1,0 @@
-- @perfume.layer_types.each do |layer_type|
-  - name = layer_type.name
-  .perfume__layer{id: name}
-    %h4= "#{name.capitalize} notes"
-    .perfume__layer__notes
-    - @perfume.send("#{name}_notes").each do |note|
-      = link_to note_path(note.id) do
-        .layer__notes__note= note.name

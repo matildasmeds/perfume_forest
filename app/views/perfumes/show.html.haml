@@ -7,6 +7,6 @@
         = "Created by #{@perfume.brand.name}, "
         = "in #{@perfume.year}"
     .layers
-      = render 'layer_types', object: @perfume
+      = render 'layers', object: @perfume
 
 = javascript_include_tag 'application', 'data-turbolinks-track' => true
