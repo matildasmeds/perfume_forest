@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151121154000) do
+ActiveRecord::Schema.define(version: 20160403093744) do
 
   create_table "brands", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -39,6 +39,9 @@ ActiveRecord::Schema.define(version: 20151121154000) do
     t.integer  "note_id"
     t.integer  "layer_type_id"
   end
+
+  add_index "perfume_notes", ["note_id"], name: "index_perfume_notes_on_note_id"
+  add_index "perfume_notes", ["perfume_id"], name: "index_perfume_notes_on_perfume_id"
 
   create_table "perfumes", force: :cascade do |t|
     t.datetime "created_at", null: false
