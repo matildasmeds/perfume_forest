@@ -1,5 +1,5 @@
 require 'spec_helper'
-require_relative '../navigation_spec_helpers'
+require_relative 'navigation_spec_helpers'
 # Note: Capybara with selenium is not able
 # to navigate these. Reason unknown.
 describe 'Navigation' do

@@ -7,5 +7,4 @@ class PerfumesController < ApplicationController
   def show
     @perfume = Perfume.includes(:notes).find(params["id"])
   end
-
 end

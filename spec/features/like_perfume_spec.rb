@@ -1,5 +1,5 @@
 require 'spec_helper'
-require_relative '../like_perfume_spec_helpers.rb'
+require_relative 'like_perfume_spec_helpers.rb'
 
 describe 'Liking feature' do
   # Clearing localStorage in a after :each would be much nicer,
