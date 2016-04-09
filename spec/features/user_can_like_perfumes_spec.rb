@@ -1,11 +1,7 @@
 require 'spec_helper'
-require_relative 'like_perfume_spec_helpers.rb'
+require_relative 'helpers/user_can_like_perfumes_spec_helper.rb'
 
-describe 'Liking feature' do
-  # Clearing localStorage in a after :each would be much nicer,
-  # than calling the like_perfume again
-  # Each perfume on page has heart element
-  # The has css / has no css assertions are not working
+RSpec.feature 'User can like perfumes' do
 
   after(:each) do
     reset_local_storage
@@ -16,14 +12,14 @@ describe 'Liking feature' do
       Capybara.use_default_driver
   end
 
-  it 'likes a perfume', js: true do
+  scenario 'likes a perfume', js: true do
     visit root_path
     expect(no_likes?).to eql(true)
     like_perfume(1)
     expect(count_likes?(1)).to eql(true)
   end
 
-  it 'stores liked perfumes', js: true do
+  scenario 'previously liked perfumes persist between page loads', js: true do
     visit root_path
     expect(no_likes?).to eql(true)
     like_perfumes([3,2,5])

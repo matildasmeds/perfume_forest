@@ -1,8 +1,16 @@
 # Method collection to enable cleaner navigation specs
-
 def setup_note_and_perfume
-  let(:perfume) { Perfume.where(name: 'Envy Me', brand_id: Brand.find_by_name('Gucci').id).first }
-  let(:note) { Note.find_by_name('Mango') }
+  conds = { name: 'Envy Me', brand_id: Brand.find_by_name('Gucci').id }
+  @perfume = Perfume.where(conds).first
+  @note = Note.find_by_name('Mango')
+end
+
+def perfume
+  @perfume
+end
+
+def note
+  @note
 end
 
 def start_at(from_path)

@@ -43,6 +43,7 @@ group :development, :test do
   gem 'byebug', '~> 8.2'
   gem 'capybara', '~> 2.5'
   gem 'sqlite3', '~> 1.3'
+  gem 'pry'
 end
 
 group :development do
