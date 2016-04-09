@@ -5,7 +5,6 @@ require 'rspec/rails'
 require 'capybara/rails'
 require 'shoulda/matchers'
 require 'database_cleaner'
-require 'factory_girl'
 require 'byebug'
 
 RSpec.configure do |config|
