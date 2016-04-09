@@ -27,3 +27,13 @@ def assert_navigates_to(object, action)
     end
   expect(current_path).to eq(target_path)
 end
+
+def assert_navigates_to_perfumes
+  click_link 'Perfumes'
+  expect(current_path).to eql(perfumes_path)
+end
+
+def assert_navigates_to_notes
+  click_link 'Notes'
+  expect(current_path).to eql(notes_path)
+end
