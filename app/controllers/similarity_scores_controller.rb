@@ -1,11 +1,17 @@
 require 'similarity_scores'
 class SimilarityScoresController < ApplicationController
   def show
-    id = params[:id]
+    score = SimilarityScores.compare(args_from_params(params))
+    render json: { id: params[:id].to_i, score: score }.to_json
+  end
+
+  private
+
+  def args_from_params(params)
+    p_id = params[:id]
     liked_ids = params[:liked_ids]
-    target = Perfume.find(id).all_notes_ids
-    data = liked_ids.map{ |id| Perfume.find(id).all_notes_ids }
-    score = SimilarityScores.compare(target: target, data: data)
-    render json: { id: id.to_i, score: score }.to_json
+    target_note_ids = Perfume.find(p_id).all_notes_ids
+    liked_note_id_sets = liked_ids.map{ |id| Perfume.find(id).all_notes_ids }
+    { target: target_note_ids, data: liked_note_id_sets }
   end
 end
