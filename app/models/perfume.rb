@@ -5,6 +5,7 @@ class Perfume < ActiveRecord::Base
   has_many :layer_types, -> { distinct }, through: :perfume_notes
   validates_presence_of :name, :brand, :year
   validates :name, uniqueness: { scope: :brand_id, case_sensitive: false }
+  scope :all_ordered_by_name, -> { order(:name) }
 
   # for views
   def title
