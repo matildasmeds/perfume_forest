@@ -1,5 +1,9 @@
 require 'similarity_scores'
 class SimilarityScoresController < ApplicationController
+
+  # Considering this controller is not currently used
+  # probably should not be in master either :->
+
   def show
     score = SimilarityScores.compare(args_from_params(params))
     render json: { id: params[:id].to_i, score: score }.to_json
