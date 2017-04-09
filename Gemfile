@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.4'
+gem 'rails', '5.0.1'
+gem 'actionpack', '5.0.1'
+gem 'rails-dom-testing', '~> 2.0'
 # Use PostgreSQL in production
 gem 'pg', '~> 0.18'
 gem 'thin', '~> 1.6'
@@ -14,7 +16,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails', '4.0.5'
+gem 'jquery-rails', '4.3.1'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks', '2.5.3'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -41,7 +43,7 @@ group :development, :test do
   gem 'database_cleaner', '~> 1.5'
   gem 'shoulda-matchers', '~> 2.8'
   gem 'selenium-webdriver', '~> 2.52'
-  gem 'chromedriver-helper', '~> 1.0'
+  gem 'chromedriver-helper', '~> 1.1.0'
   gem 'byebug', '~> 8.2'
   gem 'capybara', '~> 2.5'
   gem 'sqlite3', '~> 1.3'
