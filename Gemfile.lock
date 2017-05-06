@@ -141,6 +141,7 @@ GEM
       nokogiri (~> 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    rails-perftest (0.0.7)
     rails_12factor (0.0.3)
       rails_serve_static_assets
       rails_stdout_logging
@@ -175,6 +176,7 @@ GEM
       rspec-mocks (~> 3.5.0)
       rspec-support (~> 3.5.0)
     rspec-support (3.5.0)
+    ruby-prof (0.16.2)
     ruby_parser (3.8.4)
       sexp_processor (~> 4.1)
     rubyzip (1.2.1)
@@ -248,10 +250,12 @@ DEPENDENCIES
   pry
   rails (= 5.0.1)
   rails-dom-testing (~> 2.0)
+  rails-perftest
   rails_12factor
   rspec (~> 3.4)
   rspec-expectations (~> 3.3)
   rspec-rails (~> 3.3)
+  ruby-prof
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   selenium-webdriver (~> 2.52)

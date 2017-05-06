@@ -26,6 +26,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'sprockets-rails', '~> 2.3'
 gem 'haml-rails', '~> 0.9'
 gem 'rails_12factor'
+gem 'rails-perftest'
+gem 'ruby-prof'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
