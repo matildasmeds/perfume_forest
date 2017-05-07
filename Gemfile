@@ -27,7 +27,7 @@ gem 'sprockets-rails', '~> 2.3'
 gem 'haml-rails', '~> 0.9'
 gem 'rails_12factor'
 gem 'rails-perftest'
-gem 'ruby-prof'
+gem 'ruby-prof', '0.15.9'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
