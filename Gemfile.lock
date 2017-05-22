@@ -176,7 +176,7 @@ GEM
       rspec-mocks (~> 3.5.0)
       rspec-support (~> 3.5.0)
     rspec-support (3.5.0)
-    ruby-prof (0.16.2)
+    ruby-prof (0.15.9)
     ruby_parser (3.8.4)
       sexp_processor (~> 4.1)
     rubyzip (1.2.1)
@@ -255,7 +255,7 @@ DEPENDENCIES
   rspec (~> 3.4)
   rspec-expectations (~> 3.3)
   rspec-rails (~> 3.3)
-  ruby-prof
+  ruby-prof (= 0.15.9)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   selenium-webdriver (~> 2.52)
