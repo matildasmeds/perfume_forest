@@ -40,6 +40,7 @@ GEM
     archive-zip (0.7.0)
       io-like (~> 0.3.0)
     arel (6.0.3)
+    benchmark-ips (2.3.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
@@ -172,6 +173,7 @@ GEM
       rspec-mocks (~> 3.4.0)
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
+    ruby-prof (0.16.2)
     ruby_parser (3.8.1)
       sexp_processor (~> 4.1)
     rubyzip (1.2.0)
@@ -229,6 +231,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  benchmark-ips
   byebug (~> 8.2)
   capybara (~> 2.5)
   chromedriver-helper (~> 1.0)
@@ -244,6 +247,7 @@ DEPENDENCIES
   rspec (~> 3.4)
   rspec-expectations (~> 3.3)
   rspec-rails (~> 3.3)
+  ruby-prof
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   selenium-webdriver (~> 2.52)

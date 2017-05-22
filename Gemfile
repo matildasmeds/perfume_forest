@@ -46,6 +46,11 @@ group :development, :test do
   gem 'capybara', '~> 2.5'
   gem 'sqlite3', '~> 1.3'
   gem 'pry'
+  gem 'benchmark-ips'
+end
+
+group :profile do
+  gem 'ruby-prof'
 end
 
 group :development do
