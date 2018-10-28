@@ -4,24 +4,8 @@
 
 PerfumeForest is a tiny catalogue of perfumes and olfatory notes. You can 'like' perfumes that you already know you like.
 The original idea was to create a recommendation engine, based on likes, but I don't have the interest to do that currently.  
+The application stores likes in the browser's local storage. 
 
-Visit the application --> https://perfume-forest.herokuapp.com
-
-The name is derived from so called random forest algorithms, which sparked the idea for this application initially. The application stores likes in the browser's local storage. No login is required, hence there is no authentication mechanism in place.
-
-Technical stack includes Ruby on Rails 4.2, Thin webserver, Postgresql, Haml for templating, vanilla CSS, and a bit of JavaScript to implement client side functionalities. Test suite is powered by RSpec, Capybara, Selenium and Chrome driver.
-
-Feedback is very welcome, and so are contributions, if you feel interested in the project.
-
-== Installation steps
-  git clone https://github.com/matildasmeds/perfume_forest.git
-  bundle install
-  rake db:schema:load
-  rake db:seed
-
-== Start application
-  rails s
-
-== Author
+Ruby on Rails 4.2, Thin webserver, Postgresql, Haml, vanilla CSS, and a bit of JavaScript. Test suite is powered by RSpec, Capybara, Selenium and Chrome driver.
 
 Published under MIT Licence, Copyright © 2016 Matilda Smeds
