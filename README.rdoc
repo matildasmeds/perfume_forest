@@ -2,10 +2,8 @@
 
 == About
 
-PerfumeForest is a tiny catalogue of perfumes and olfatory notes. You can 'like' perfumes that you already know you like.
-The original idea was to create a recommendation engine, based on likes, but I don't have the interest to do that currently.  
-The application stores likes in the browser's local storage. 
+PerfumeForest is a tiny catalogue of perfumes. You can 'like' perfumes. The application stores likes in the browser's local storage. 
 
-Ruby on Rails 4.2, Thin webserver, Postgresql, Haml, vanilla CSS, and a bit of JavaScript. Test suite is powered by RSpec, Capybara, Selenium and Chrome driver.
+Ruby on Rails 4.2, Thin webserver, Postgresql, Haml, CSS, JavaScript, RSpec, Capybara, Selenium and Chrome driver.
 
 Published under MIT Licence, Copyright © 2016 Matilda Smeds
